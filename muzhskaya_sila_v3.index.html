@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>МУЖСКАЯ СИЛА — Ринат Мусин</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0A1628;
+  --navy-mid: #0F1E35;
+  --gold: #C9A84C;
+  --gold-dark: #A8892A;
+  --gold-dim: #8a6e2f;
+  --ink: #121212;
+  --ink-mid: #1f1f1f;
+  --ink-light: #444444;
+  --paper: #FFFFFF;
+  --paper-warm: #F9F7F4;
+  --paper-dark: #F0EDE6;
+  --rule: #c8c1b6;
+  --rule-light: #e2ddd6;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ═══ MASTHEAD ═══ */
+.masthead {
+  background: var(--paper);
+  border-bottom: 3px double var(--ink);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.masthead-top {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--rule);
+}
+
+.masthead-date {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  color: var(--ink-light);
+  letter-spacing: 0.05em;
+}
+
+.masthead-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 4vw, 26px);
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.masthead-handle {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  background: var(--navy);
+  padding: 56px 24px 48px;
+  text-align: center;
+}
+
+.hero-category {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(201,168,76,0.8);
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(60px, 16vw, 114px);
+  font-weight: 900;
+  color: var(--paper);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.hero-title .gold { color: var(--gold); }
+
+.hero-rule {
+  width: 56px; height: 3px;
+  background: var(--gold);
+  margin: 24px auto;
+}
+
+.hero-deck {
+  font-family: Georgia, serif;
+  font-size: clamp(17px, 4vw, 21px);
+  font-style: italic;
+  color: rgba(255,255,255,0.78);
+  max-width: 500px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+}
+
+.hero-byline {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  color: rgba(201,168,76,0.65);
+  font-style: italic;
+}
+
+/* ═══ ARTICLE ═══ */
+.article {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 44px 20px;
+}
+
+/* ═══ SECTION HEADERS NYT STYLE ═══ */
+.section-rule {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 52px 0 8px;
+}
+
+.section-rule::before,
+.section-rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ink);
+}
+
+.section-tag {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--ink-light);
+  white-space: nowrap;
+}
+
+.section-head {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 7vw, 44px);
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.12;
+  margin-bottom: 22px;
+  letter-spacing: -0.02em;
+}
+
+/* ═══ BODY TEXT NYT STYLE ═══ */
+p {
+  font-family: Georgia, serif;
+  font-size: clamp(17px, 3.8vw, 19px);
+  color: var(--ink-mid);
+  margin-bottom: 22px;
+  line-height: 1.82;
+  font-weight: 400;
+}
+
+p.lead {
+  font-size: clamp(20px, 5vw, 25px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.7;
+  border-left: 5px solid var(--gold);
+  padding-left: 22px;
+  margin-bottom: 28px;
+}
+
+p strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+p.italic {
+  font-style: italic;
+  color: var(--ink-light);
+}
+
+p.caption {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+/* ═══ PULLQUOTE NYT STYLE ═══ */
+.pullquote {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 24px 0 20px;
+  margin: 36px 0;
+}
+
+.pullquote p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(23px, 6vw, 32px);
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.pullquote-attr {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-top: 10px;
+  display: block;
+}
+
+/* ═══ DARK BOX ═══ */
+.box-dark {
+  background: var(--navy);
+  padding: 32px 28px;
+  margin: 32px 0;
+}
+
+.box-dark-head {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 5.5vw, 27px);
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.box-dark p {
+  color: rgba(255,255,255,0.82);
+  font-size: clamp(15px, 3.5vw, 17px);
+  margin-bottom: 10px;
+  line-height: 1.75;
+}
+
+.box-dark p:last-child { margin-bottom: 0; }
+
+/* ═══ GOLD BOX ═══ */
+.box-gold {
+  background: var(--paper-warm);
+  border-left: 5px solid var(--gold);
+  padding: 22px 22px 22px 26px;
+  margin: 28px 0;
+}
+
+.box-gold p {
+  font-style: italic;
+  font-size: clamp(16px, 3.8vw, 18px);
+  color: var(--ink-mid);
+  margin-bottom: 8px;
+}
+
+.box-gold p:last-child { margin-bottom: 0; }
+
+/* ═══ STEPS NYT STYLE ═══ */
+.steps { margin: 28px 0; }
+
+.step {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule-light);
+  align-items: flex-start;
+}
+
+.step:last-child { border-bottom: none; }
+
+.step-num {
+  flex-shrink: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--gold-dim);
+  line-height: 1;
+  min-width: 40px;
+  margin-top: 2px;
+}
+
+.step-content {}
+
+.step-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(19px, 4.5vw, 23px);
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.step-content p {
+  font-size: clamp(15px, 3.5vw, 17px);
+  margin-bottom: 10px;
+  line-height: 1.75;
+}
+
+.step-content p:last-child { margin-bottom: 0; }
+
+/* ═══ CHECKLIST ═══ */
+.checklist {
+  list-style: none;
+  border-top: 2px solid var(--ink);
+  margin: 20px 0;
+}
+
+.checklist li {
+  font-family: Georgia, serif;
+  font-size: clamp(17px, 4vw, 19px);
+  color: var(--ink-mid);
+  padding: 16px 0 16px 30px;
+  border-bottom: 1px solid var(--rule-light);
+  position: relative;
+  line-height: 1.7;
+}
+
+.checklist li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dim);
+  font-size: 9px;
+  top: 20px;
+}
+
+/* ═══ RESULTS BOX ═══ */
+.results-box {
+  background: var(--paper-dark);
+  border-top: 3px solid var(--navy);
+  border-bottom: 3px solid var(--navy);
+  padding: 24px;
+  margin: 28px 0;
+}
+
+.results-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.results-box ul { list-style: none; }
+
+.results-box ul li {
+  font-family: Georgia, serif;
+  font-size: clamp(15px, 3.5vw, 17px);
+  color: var(--ink-mid);
+  padding: 11px 0 11px 24px;
+  border-bottom: 1px solid var(--rule-light);
+  position: relative;
+  line-height: 1.55;
+}
+
+.results-box ul li:last-child { border-bottom: none; }
+
+.results-box ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+/* ═══ MONTHS ═══ */
+.months {
+  border-top: 3px solid var(--navy);
+  border-bottom: 1px solid var(--rule);
+  margin: 24px 0;
+}
+
+.month {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule-light);
+  align-items: flex-start;
+}
+
+.month:last-child { border-bottom: none; }
+
+.month-num {
+  flex-shrink: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+  min-width: 32px;
+  margin-top: 4px;
+}
+
+.month-label {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--ink-light);
+  display: block;
+  margin-top: 2px;
+}
+
+.month-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(19px, 4.5vw, 23px);
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.month-body p {
+  font-size: clamp(15px, 3.5vw, 17px);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* ═══ TESTIMONIALS ═══ */
+.testimonial {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 24px 0;
+  margin: 20px 0;
+  position: relative;
+}
+
+.testimonial::before {
+  content: '\201C';
+  font-family: 'Libre Baskerville', serif;
+  font-size: 88px;
+  color: var(--rule-light);
+  position: absolute;
+  top: 0; left: -8px;
+  line-height: 1;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: clamp(16px, 3.8vw, 18px);
+  color: var(--ink-mid);
+  padding-top: 20px;
+  margin-bottom: 14px;
+  line-height: 1.78;
+}
+
+.testimonial-attr {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ═══ ANCHOR ═══ */
+.anchor-box {
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  border-left: 5px solid var(--navy);
+  padding: 22px 22px 22px 26px;
+  margin: 24px 0;
+}
+
+.anchor-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.anchor-box ul { list-style: none; }
+
+.anchor-box ul li {
+  font-family: Georgia, serif;
+  font-size: clamp(14px, 3.5vw, 16px);
+  color: var(--ink-mid);
+  padding: 9px 0 9px 18px;
+  border-bottom: 1px solid var(--rule-light);
+  position: relative;
+  line-height: 1.6;
+}
+
+.anchor-box ul li:last-child { border-bottom: none; }
+.anchor-box ul li::before { content:'–'; position:absolute; left:0; color:var(--gold-dark); }
+
+.anchor-foot {
+  font-style: italic;
+  font-size: clamp(15px, 3.5vw, 17px);
+  color: var(--gold-dark);
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+/* ═══ URGENT ═══ */
+.urgent {
+  background: #fffbf0;
+  border: 1px solid #d4aa30;
+  border-left: 4px solid var(--gold);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.urgent p {
+  font-size: clamp(14px, 3.5vw, 16px);
+  color: #6b4f00;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ═══ PRICE ═══ */
+.price-section {
+  background: var(--navy);
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.price-kicker {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(201,168,76,0.6);
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.price-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(88px, 22vw, 130px);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 0.88;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.price-sub {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.05em;
+}
+
+/* ═══ SPIRITUAL ═══ */
+.spiritual {
+  background: var(--navy-mid);
+  padding: 56px 24px;
+}
+
+.spiritual-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.spiritual .section-head { color: var(--gold); font-family: 'Playfair Display', serif; font-weight: 900; }
+.spiritual .section-rule::before,
+.spiritual .section-rule::after { background: rgba(201,168,76,0.3); }
+.spiritual .section-tag { color: rgba(201,168,76,0.5); }
+
+.spiritual p {
+  color: rgba(255,255,255,0.80);
+  font-size: clamp(16px, 3.8vw, 18px);
+}
+
+.spiritual .pullquote {
+  border-top-color: rgba(201,168,76,0.5);
+  border-bottom-color: rgba(201,168,76,0.3);
+}
+
+.spiritual .pullquote p {
+  color: #E8C97A;
+  font-size: clamp(19px, 5vw, 24px);
+}
+
+/* ═══ CTA ═══ */
+.cta-section {
+  background: var(--paper-dark);
+  border-top: 3px double var(--ink);
+  padding: 56px 24px 72px;
+}
+
+.cta-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-head {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 9vw, 50px);
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.cta-sub {
+  font-family: Georgia, serif;
+  font-size: clamp(16px, 3.8vw, 18px);
+  color: var(--ink-light);
+  margin-bottom: 10px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.cta-rule {
+  width: 56px; height: 3px;
+  background: var(--gold);
+  margin: 28px auto;
+}
+
+.trigger-label {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-light);
+  margin-bottom: 14px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(17px, 4.5vw, 21px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  margin-bottom: 14px;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: var(--gold);
+  border: 2px solid var(--navy);
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+  background: var(--navy);
+  color: var(--gold);
+}
+
+.scarcity {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--gold-dark);
+  margin-bottom: 6px;
+}
+
+/* ═══ CONTACTS ═══ */
+.contacts {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+  text-align: left;
+}
+
+.contacts-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-light);
+  margin-bottom: 20px;
+}
+
+.contact { margin-bottom: 16px; }
+
+.contact-label {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--ink-light);
+  margin-bottom: 3px;
+}
+
+.contact-val {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(17px, 4.5vw, 21px);
+  font-weight: 900;
+  color: var(--navy);
+  text-decoration: none;
+  display: block;
+}
+
+.contact-val:hover { color: var(--gold-dark); }
+
+/* ═══ FOOTER ═══ */
+.footer {
+  background: var(--navy);
+  border-top: 3px double rgba(201,168,76,0.4);
+  padding: 36px 24px;
+  text-align: center;
+}
+
+.footer p {
+  font-family: Georgia, serif;
+  font-size: clamp(14px, 3.5vw, 16px);
+  font-style: italic;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.footer p:last-child {
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* ═══ FADE ═══ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="masthead-date">Специальный материал</div>
+    <div class="masthead-brand">Мужская Сила</div>
+    <div class="masthead-handle">@musinrinatt</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-category">Руководство для мужчин</div>
+  <div class="hero-title">МУЖСКАЯ<br><span class="gold">СИЛА</span></div>
+  <div class="hero-rule"></div>
+  <div class="hero-deck">Всё что тебе нужно знать чтобы снова стать настоящим мужем</div>
+  <div class="hero-byline">Ринат Мусин · 12 лет практики · более 10 000 мужчин по всему миру</div>
+</section>
+
+<!-- ОТКРЫТИЕ -->
+<div class="article fade-in">
+  <p class="lead">Ты кончаешь за две минуты, она ещё не начала. Ты переворачиваешься и молчишь, она тоже молчит.</p>
+  <p>Вы оба знаете что что-то не так, и оба делают вид что всё нормально. Ты не можешь дать ей удовольствие — не потому что не хочешь, просто не хватает времени, эрекции, сил.</p>
+  <p>Она не получает удовлетворение, ты это видишь — и сам не получаешь его тоже. Оба страдают, оба молчат, и так уже долго.</p>
+  <p class="italic">Этот документ написан для тебя.</p>
+  <div class="box-dark">
+    <div class="box-dark-head">Ринат Мусин</div>
+    <p>За 12 лет через меня прошло больше 10 000 мужчин. Сексуальная жизнь — главный показатель мужского здоровья. Именно этому я уделяю особое внимание. Только натуральные методы проверенные веками.</p>
+  </div>
+</div>
+
+<!-- ЭТО ПРО ТЕБЯ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">История</span></div>
+  <h2 class="section-head">Это про тебя?</h2>
+  <p>Тебе под 45-50, женат несколько лет, есть бизнес и уважение. Дома всё нормально — вроде бы.</p>
+  <p>Но последние год-два эрекция уже не та, заканчиваешь быстро, жена не успевает. По утрам давно ничего нет, а раньше было каждый день — теперь вспоминаешь это как другую жизнь. Либидо упало, секс раз в месяц, иногда реже.</p>
+  <p>Таблетки пробовал — стоять стоял, но голова раскалывалась, суставы ныли, настроение на нуле. И самое главное — жена не знала. Принимал тайком, прятал, молился чтобы успело подействовать. Из мужа превратился в человека который обманывает собственную жену ради одного нормального вечера.</p>
+  <div class="pullquote">
+    <p>"Я чувствую себя ненужной."</p>
+    <span class="pullquote-attr">Слова жены — не со злобой, просто как факт</span>
+  </div>
+  <p>И ты понял — это не про деньги и не про характер. Это про то что ты перестал давать ей то на что она имеет право.</p>
+  <p class="italic">Если узнал себя — читай дальше.</p>
+</div>
+
+<!-- ПРОВЕРЬ СЕБЯ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Самодиагностика</span></div>
+  <h2 class="section-head">Проверь себя</h2>
+  <p>Не нужно ставить галочки. Просто читай и чувствуй — про тебя это или нет.</p>
+  <ul class="checklist">
+    <li>Эрекция уже не та что была в 30 — ты это знаешь и она это чувствует</li>
+    <li>Кончаешь быстро, за 2-5 минут, она не успевает получить удовольствие</li>
+    <li>По утрам давно ничего нет</li>
+    <li>Хочешь жену реже чем три года назад, либидо упало</li>
+    <li>Таблетки пробовал — эффект был, но тело платило потом</li>
+    <li>Секс стал редким, раз в месяц или ещё реже</li>
+  </ul>
+  <p class="italic">Если хотя бы половина из этого про тебя — читай дальше. Это решается.</p>
+</div>
+
+<!-- ЧТО БУДЕТ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Последствия</span></div>
+  <h2 class="section-head">Что будет если ничего не делать</h2>
+  <p>Скажу тебе то что большинство боятся говорить вслух.</p>
+  <p>Женщина которая годами не получает удовлетворение от близости с мужем — меняется внутри, и никакими разговорами этот процесс не остановить. Сначала просто терпит. Потом начинает думать что она недостаточно привлекательна, что муж охладел, что кто-то другой его интересует больше.</p>
+  <p>Из этого вырастает холод в доме, раздражение по мелочам, дистанция. Ты думаешь она претендует к деньгам — на самом деле ей просто не хватает тебя. Настоящего тебя, в постели.</p>
+  <p>В исламе есть чёткое правило: муж обязан полностью удовлетворить потребность жены в близости. Это не его добрая воля. Это её право закреплённое шариатом. Ислам защищал это право женщины 1400 лет назад — задолго до того как западная наука вообще начала об этом говорить.</p>
+  <div class="box-gold">
+    <p><em>"Он создал для вас супруг из вас самих, чтобы вы находили в них утешение, и установил между вами любовь и милосердие."</em></p>
+    <p class="caption">Сура Ар-Рум, 21</p>
+  </div>
+</div>
+
+<!-- ПОЧЕМУ ТАБЛЕТКИ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Разбор ошибок</span></div>
+  <h2 class="section-head">Почему таблетки не решили проблему</h2>
+  <p>Ты уже пробовал, большинство моих клиентов тоже. Виагра, силденафил, возбудители, БАДы с красивыми обещаниями. Стоять стоял, один раз, два, может три.</p>
+  <p>Но ты помнишь что было на следующий день — голова, суставы, раздражение, разбитость. И самое унизительное: ты начал зависеть. Без таблетки уже не уверен, прячешь от жены, принимаешь тайком.</p>
+  <div class="pullquote">
+    <p>Это не мужская сила. Это протез.</p>
+  </div>
+  <p>Таблетка делает одно — принудительно гонит кровь, она не убирает причину. Воспаление осталось, тестостерон не восстановился, либидо не вернулось.</p>
+  <p class="italic">Сколько ты уже потратил на то что не сработало? Мои клиенты называют суммы от 500 до 2000 долларов — и потом приходят ко мне.</p>
+</div>
+
+<!-- НЕ СЛОМАЛСЯ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Диагноз</span></div>
+  <h2 class="section-head">Ты не сломался. Ты засорился.</h2>
+  <p>Слабая эрекция, быстрое семяизвержение, упавшее либидо — это не приговор и не возраст. Это симптомы. За каждым стоит конкретная причина.</p>
+  <p>Когда печень перегружена, тестостерон не выводится правильно. Когда простата воспалена — кровоток слабый именно там где нужна сила. Когда нервная система истощена — желание пропадает первым и восстанавливается последним.</p>
+  <p><strong>Это не старость, это годами накопленное — и это убирается если работать с причиной а не с симптомом.</strong></p>
+</div>
+
+<!-- ЧТО РЕАЛЬНО РАБОТАЕТ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Система</span></div>
+  <h2 class="section-head">Вот что реально работает</h2>
+  <p>Сейчас я дам тебе систему. Бесплатно. Всю. Не на один вечер — навсегда.</p>
+  <p class="italic">Четыре шага, все четыре важны, пропустить ни один нельзя.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">I</div>
+      <div class="step-content">
+        <div class="step-title">Очищение организма</div>
+        <p>Большинство мужчин пропускают этот шаг — и именно поэтому ничего не работает. Если организм зашлакован, любое средство усваивается в половину силы.</p>
+        <p>Очищение крови, лимфы, кишечника. Хиджама на специальные точки снимает хронические воспаления в простате, сосудах малого таза, пояснице. <strong>Без этого шага всё остальное работает вполовину.</strong></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">II</div>
+      <div class="step-content">
+        <div class="step-title">Правильное питание</div>
+        <p>Еда — это либо лекарство либо яд. Сахар подавляет тестостерон через 30 минут. Трансжиры забивают сосуды малого таза. Алкоголь снижает тестостерон даже в небольших дозах.</p>
+        <p>Нужно убрать главных врагов и добавить главных союзников — тело начнёт отвечать быстро.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">III</div>
+      <div class="step-content">
+        <div class="step-title">Специальные упражнения</div>
+        <p>Не спортзал и не марафоны. Упражнения Кегеля для мужчин — большинство не знает что они существуют. Именно они дают контроль над семяизвержением и позволяют продлить секс настолько насколько нужно.</p>
+        <p>15-20 минут в день, правильно и регулярно — результат через несколько недель.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">IV</div>
+      <div class="step-content">
+        <div class="step-title">Адаптогены</div>
+        <p><strong>Делают три вещи одновременно.</strong> Восстанавливают гормональный фон — тестостерон, либидо, эрекция. Поднимают энергию без нервозности. Нормализуют психоэмоциональное состояние.</p>
+        <p>Стоит только чуть понервничать — и вроде бы вспыхнувшее желание тут же гаснет. Знакомо? Когда нервная система в порядке — ты переключаешься мгновенно. <strong>Это и есть настоящий мужской контроль.</strong></p>
+        <p>Работают только при двух условиях: качество и индивидуальный подбор. Выращенный кордицепс не работает — только дикий из Гималаев.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- МОЖНО САМОМУ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Честно</span></div>
+  <h2 class="section-head">Это можно делать самому</h2>
+  <p>Всё что я описал выше — реально работает. И всё это можно делать самостоятельно.</p>
+  <p>Но вот в чём правда. У меня ушло больше десяти лет чтобы выйти на эту систему. Сотни проб, ошибок, неправильных средств. Годы чтобы найти правильных поставщиков, понять какие сочетания дают синергию а какие нейтрализуют друг друга.</p>
+  <p>Ты можешь пройти этот путь сам.</p>
+  <p class="italic">Вопрос один: сколько лет и денег ты готов потратить, пока проблема продолжает разрушать твою семью?</p>
+  <p>Я уже прошёл этот путь. Потратил десять лет чтобы ты прошёл его за три месяца.</p>
+</div>
+
+<!-- МОЯ ИСТОРИЯ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Личное</span></div>
+  <h2 class="section-head">Моя история</h2>
+  <p>Меня зовут Ринат, мне 48 лет, я женат и у меня четверо детей. Я прошёл через всё что описано выше — слабая эрекция, быстрое семяизвержение, упавшее либидо, холод в отношениях.</p>
+  <p>Помню момент когда жена впервые за долгое время сама пришла ко мне ночью. Не я к ней — она ко мне. Я понял тогда что всё изменилось. Жена стала другим человеком — мягкой, тёплой, благодарной. Претензий нет. Ставит меня первым.</p>
+  <p>Сегодня я уверенно контролирую свою мужскую силу и держу жизненную энергию на высоте. Хватает на всё — на семью, на дело и на вторую жену. Это большая милость Всевышнего, и я с радостью делюсь этим с вами.</p>
+  <p>За 12 лет через меня прошло больше 10 000 мужчин. Я не врач, врачи прописывают таблетки. Я практик который прошёл этот путь сам и провёл по нему тысячи других.</p>
+</div>
+
+<!-- ОТЗЫВЫ -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Отзывы</span></div>
+  <h2 class="section-head">Что говорят мои клиенты</h2>
+  <div class="testimonial">
+    <p>Близость была раз в месяц, я думала он охладел или кто-то другой. Накручивала себя, это было невыносимо. Увидела его видео, купила курс сама, первый месяц водила мужа за руку. Со второго месяца всё изменилось. Два раза в неделю стабильно, муж думает обо мне, сначала обо мне. Он стал другим человеком — глаза горят, энергия вернулась. Называю это спасением для нашей семьи.</p>
+    <div class="testimonial-attr">Жена клиента — написала сама</div>
+  </div>
+  <div class="testimonial">
+    <p>До программы — секс раз в месяц, две минуты максимум. Думал это возраст, смирился. После трёх месяцев — раз в неделю стабильно, иногда чаще. Утренняя эрекция вернулась. Жена довольна. Три месяца считаю быстро для такого результата.</p>
+    <div class="testimonial-attr">Клиент, 45 лет</div>
+  </div>
+  <p class="italic">Это не единичные случаи. Это система которая работает. И за этим стоит кое-что большее.</p>
+</div>
+
+<!-- ДЛЯ ТЕХ КТО ВЕРИТ -->
+<div class="spiritual">
+  <div class="spiritual-inner fade-in">
+    <div class="section-rule"><span class="section-tag">Для тех кто верит</span></div>
+    <h2 class="section-head">Духовный смысл</h2>
+    <p>Настоящий мужчина — это тот чья забота о жене делает его сердце мягче, а не жёстче. Аллах установил между супругами Мавадда и Рахма — любовь и милосердие. Это Божественное знамение вложенное в твой брак.</p>
+    <p>Улыбка жены вызванная твоей заботой тяжела на весах благих дел. Каждый раз когда ты даёшь ей это — это Ибада. Поклонение Аллаху через заботу о той которую Он доверил тебе.</p>
+    <div class="pullquote">
+      <p>"Лучший из вас — тот, кто лучший для своей семьи."</p>
+      <span class="pullquote-attr" style="color:rgba(201,168,76,0.6)">ат-Тирмизи</span>
+    </div>
+    <p class="italic" style="color:rgba(232,201,122,0.75)">Стань лучшим. И пусть этот путь начнётся с решения которое ты примешь сегодня.</p>
+  </div>
+</div>
+
+<!-- ОФФЕР -->
+<div class="article fade-in">
+  <div class="section-rule"><span class="section-tag">Программа</span></div>
+  <h2 class="section-head">У меня всё уже собрано</h2>
+  <p>Я взял всё что описал выше и упаковал в одну программу. Три месяца личной работы со мной.</p>
+  <div class="months">
+    <div class="month">
+      <div>
+        <div class="month-num">1</div>
+        <span class="month-label">месяц</span>
+      </div>
+      <div class="month-body">
+        <div class="month-title">Очищение</div>
+        <p>Глубокое очищение. Кровь, лимфа, кишечник, простата, сосуды. Только на чистую почву идут активные средства.</p>
+      </div>
+    </div>
+    <div class="month">
+      <div>
+        <div class="month-num">2</div>
+        <span class="month-label">месяц</span>
+      </div>
+      <div class="month-body">
+        <div class="month-title">Внедрение</div>
+        <p>Адаптогены подобранные индивидуально. Либидо возвращается, эрекция крепчает, ночи меняются. Жена чувствует это раньше тебя.</p>
+      </div>
+    </div>
+    <div class="month">
+      <div>
+        <div class="month-num">3</div>
+        <span class="month-label">месяц</span>
+      </div>
+      <div class="month-body">
+        <div class="month-title">Закрепление</div>
+        <p>Результаты закрепляются навсегда. Убрана причина а не симптом. Система остаётся с тобой.</p>
+      </div>
+    </div>
+  </div>
+  <div class="results-box">
+    <div class="results-label">Что получают практически все</div>
+    <ul>
+      <li>Секс в 2-3 раза чаще уже со второго месяца</li>
+      <li>Продолжительность вырастает — она успевает получить удовольствие</li>
+      <li>Утренняя эрекция возвращается к концу первого месяца</li>
+      <li>Жена становится мягче, теплее, благодарнее</li>
+      <li>Энергия на весь день без стимуляторов</li>
+    </ul>
+  </div>
+  <ul class="checklist">
+    <li>Все средства включены в стоимость — только качественные, только проверенные</li>
+    <li>Личный протокол под твою ситуацию — не шаблон</li>
+    <li>Поддержка каждый день на протяжении всех трёх месяцев</li>
+    <li>Только для женатых мужчин · максимум пятеро одновременно</li>
+  </ul>
+  <div class="anchor-box">
+    <div class="anchor-head">Посчитай сам</div>
+    <ul>
+      <li>Полный набор натуральных средств на три месяца — около 1000 долларов если брать у меня напрямую</li>
+      <li>Если искать по отдельности на рынке — выйдет дороже. Дикий кордицепс один стоит от 40 до 110 долларов за грамм</li>
+      <li>Три месяца личного сопровождения каждый день — идёт сверху как бонус</li>
+      <li>Личный протокол, Императорский календарь, техники и упражнения</li>
+    </ul>
+    <p class="anchor-foot">Итого ты платишь за средства по оптовой цене — и получаешь систему и коучинг в подарок.</p>
+  </div>
+  <div class="urgent">
+    <p>Предупреждаю сразу: курс валют растёт, стоимость ингредиентов растёт, за сопровождение тоже буду добавлять. Сейчас это самое выгодное предложение которое будет.</p>
+  </div>
+</div>
+
+<!-- ЦЕНА -->
+<div class="price-section">
+  <div class="price-kicker">Стоимость программы</div>
+  <div class="price-num">1000$</div>
+  <p class="price-sub">три месяца · всё включено · личная работа</p>
+</div>
+
+<div class="article fade-in" style="padding-top:36px; padding-bottom:20px">
+  <p>Прежде чем решишь что это дорого — ответь себе честно. Сколько ты уже потратил на таблетки и БАДы которые не решили проблему?</p>
+  <p>Большинство моих клиентов называют суммы от 500 до 2000 долларов. И проблема осталась. Здесь ты платишь один раз за систему которая остаётся навсегда. За жену которая снова почувствует себя желанной. За семью которую можно было потерять.</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner fade-in">
+    <h2 class="cta-head">Следующий шаг</h2>
+    <div class="cta-rule"></div>
+    <p class="cta-sub">Короткий созвон на 20-30 минут. Ты рассказываешь ситуацию, я слушаю и отвечаю на вопросы. Просто мужской разговор один на один.</p>
+    <div style="margin-top:36px">
+      <p class="trigger-label">Хочешь чтобы я разобрал твою ситуацию — напиши:</p>
+      <a href="https://wa.me/79381706277?text=РАЗБОР" class="btn btn-primary">РАЗБОР</a>
+    </div>
+    <div style="height:1px;background:var(--rule);margin:20px 0"></div>
+    <div>
+      <p class="trigger-label">Уже готов в программу — напиши:</p>
+      <a href="https://wa.me/79381706277?text=ПРОГРАММА" class="btn btn-secondary">ПРОГРАММА</a>
+    </div>
+    <div style="height:1px;background:var(--rule);margin:20px 0"></div>
+    <p class="scarcity">Одновременно в программе максимум 5 человек.</p>
+    <p class="cta-sub">Если места есть — отвечу в течение дня.</p>
+    <div class="contacts">
+      <div class="contacts-head">Где написать</div>
+      <div class="contact">
+        <div class="contact-label">В первую очередь</div>
+        <a href="https://wa.me/79381706277" class="contact-val">WhatsApp: +7 938 170 62 77</a>
+      </div>
+      <div class="contact">
+        <div class="contact-label">Или помощнику</div>
+        <a href="https://wa.me/9094348278" class="contact-val">WhatsApp: +909 434 82 78 (Max)</a>
+      </div>
+      <div class="contact">
+        <div class="contact-label">Instagram</div>
+        <a href="https://instagram.com/musinrinatt" class="contact-val">@musinrinatt</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>"Тот, кто женился, уже исполнил половину предписаний своей веры."</p>
+  <p>Исполни вторую половину. Стань тем мужем которого она ждёт.</p>
+</div>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.08});
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
